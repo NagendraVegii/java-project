@@ -17,7 +17,7 @@ node('linux')
 		
 		
     stage('Deploy') {
-    sh 'aws s3 cp ${WORKSPACE}/dist/rectangle-$BUILD_NUMBER.jar jenkins-s3bucket-llnp8fz4jq42'
+    sh 'aws s3 cp ${WORKSPACE}/dist/rectangle-$BUILD_NUMBER.jar s3://jenkins-s3bucket-llnp8fz4jq42'
     }
     
     
